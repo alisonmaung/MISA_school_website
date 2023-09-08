@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | MISA</title>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+body {
+    min-height: 100vh;
+    background-color: #eff6fb;
+    margin: 0;
+    padding: 0;
+
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #a2cafd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 40px;
+    color: #eff6fb;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: #eff6fb;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+
+.navbar a::before {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2PX;
+    background: #FFF;
+    transition: 90ms;
+}
+.navbar a:hover:before {
+    width: 100%;
+}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .contact-details, .contact-form {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .contact-details {
+            float: left;
+            width: 30%;
+        }
+
+        .contact-form {
+            float: right;
+            width: 65%;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            padding: 20px 25px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .map {
+            width: 100%;
+            height: 400px;
+        }
+
+        .contact-section {
+            background-color: #57e8de; 
+            padding: 20px; 
+            border-radius: 8px; 
+            text-align: center; 
+        }
+
+        .contact-section h2 {
+            color: #333; 
+            font-size: 30px; 
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .contact-details {
+            font-size: 19px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .contact-button {
+            background-color: #007BFF; 
+            color: white; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            text-decoration: none; 
+            display: inline-block;
+        }
+
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="MISA_logo.jpg" alt="icon" width="80" height="80">
+        <nav class="navbar">
+            <a href="home_page.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="http://www.bfi.edu.mm">Our Schools</a>
+            <a href="education.html">Education</a> 
+            <a href="contact.html">Contacts</a>
+            <a href="club.html">Extracurricular</a>
+            <a href="contact_us.html">Contact Us</a>
+        </nav>
+         
+    </header>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+    <div class="container">
+        <h1>Contact Us</h1>
+        
+        <div class="contact-details">
+            <h3>Mandalay International Science Academy</h3>
+            📍 Corner of 53*30th Street, Chan Aye Thar San Tsp, Mandalay<br>
+            📞 (02) 4072753, (09) 43060423, (09) 43060027<br>
+            📧 contact@bfi-edu.com
+        </div>
+
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Clear floats after the columns -->
+        <div style="clear: both;"></div>
+        
+        <!-- Embed a Google Map -->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3699.9723889873317!2d96.12513217613888!3d21.97402275464105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6d8b63a3554d%3A0x465c324f987d3baa!2sMISA%20High%20School%20Campus!5e0!3m2!1sen!2smm!4v1694182233939!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" " width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    
+</br>
+</br>
+</br>
+</body>
+</html>
